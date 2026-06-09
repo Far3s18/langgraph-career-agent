@@ -1,7 +1,11 @@
+[build-system]
+requires = ["setuptools>=69", "wheel"]
+build-backend = "setuptools.build_meta"
+
 [project]
 name = "resume-ai"
 version = "0.1.0"
-description = "Add your description here"
+description = "Multi-agent LangGraph system for resume analysis, job-fit scoring, ATS feedback, cover letter generation, and personalized career strategy."
 readme = "README.md"
 requires-python = ">=3.13"
 dependencies = [
@@ -15,3 +19,6 @@ dependencies = [
     "pydantic-settings>=2.14.1",
     "qdrant-client>=1.18.0",
 ]
+
+[tool.setuptools.packages.find]
+where = ["src"]
